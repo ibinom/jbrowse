@@ -1,0 +1,21 @@
+{
+   "tracks" : [
+      {
+         "storeClass" : "JBrowse/Store/Sequence/StaticChunked",
+         "chunkSize" : 20000,
+         "urlTemplate" : "https://s3-eu-west-1.amazonaws.com/binomdata/jbrowse/hg19/{refseq_dirpath}/{refseq}-",
+         "label" : "DNA",
+         "type" : "SequenceTrack",
+         "category" : "Reference sequence",
+         "key" : "Reference sequence"
+      },
+      {
+         "storeClass" : "JBrowse/Store/SeqFeature/BAM",
+         "urlTemplate" : "http://test.ibinom.com:8200/sample_data/json/hg19/test.bam",
+         "label" : "test",
+         "type" : "JBrowse/View/Track/Alignments2",
+         "key" : "test"
+      }
+   ],
+   "formatVersion" : 1
+}
